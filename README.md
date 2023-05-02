@@ -1,3 +1,6 @@
+This project represents one of my first attempts at creating a small project with Rspec testing.
+
+
 ## Background & Objectives
 
 Typoglycemia is the brains ability to read jumbled up words, as long as the first and last letter are in the right place. The best known example of this is:

@@ -1,19 +1,20 @@
 # frozen_string_literal: true
 
-def jumble(string)
+def typoglycemize(string)
   jumbled_string = []
-  words = string.split
+  words = string.split(/(\W+)/) # catch whitespace and punctuation
   words.each do |word|
-    jumbled_string << typoglycemize(word)
+    jumbled_string << jumble(word)
   end
-  jumbled_string.join(' ')
+  jumbled_string.join
 end
 
-def typoglycemize(word)
+private
+
+def jumble(word)
   return word if (word.length < 4) || (word !~ /\D/)
 
   chars = word.chars
-
   # For each word, save the position of the first and last letter
   first_letter = chars.shift
   last_letter = chars.pop

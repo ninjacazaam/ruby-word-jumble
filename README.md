@@ -21,7 +21,4 @@ Punctuation is left as is. This includes apostrophes in contractions
 
 ## Use
 
-Using terminal args, run jumble.rb and pass it a string you wish to jumble. You should find that the first and last letter of the words in the string remains, and the middle letters are jumbled up!!
-
-You can also run 'rake' to see the outcome of unit testing.
-
+Simply call the method '#typoglycemize' and pass a string. It will return the string with letters jumbed, preserving the first and last letter.
